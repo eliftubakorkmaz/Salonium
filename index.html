@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salonium App</title>
+
+    <!-- !FontAwesome -->
+    <script src="https://kit.fontawesome.com/136a4e8ae3.js" crossorigin="anonymous"></script>
+
+    <!-- !AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- !Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- !External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- !Nav Bar -->
+      <nav class="navbar navbar-expand-lg bg-primary-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="salonium">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link fw-bolder lang ms-5 fs-5" aria-current="page" href="./index.html" id="Özelliklerimiz"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder lang ms-5 fs-5" href="#" id="İletişim"></a>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-danger me-4 lang w-100 h-50" id="Giriş Yap"></button>
+            <select id="language" class="btn btn-outline-danger form-select w-75 h-50 me-5" onchange="changeLanguage()">
+                <option value="tr">Türkçe</option>
+                <option value="en">English</option>
+            </select>
+          </form>
+        </div>
+      </nav>
+
+
+      <!-- !Başlık-->
+      <h1 class="lang text-center mt-3 text-danger mt-4" id="Salonium Uzmanların Tercihi"></h1>
+      <hr>
+
+      <!-- !Navbar devam -->
+      <div class="div">
+        <div class="row">
+            <div class="col-6 mt-5">
+                <h2 class="lang mt-3 ms-5 text-danger text-center" id="Güzellik İşletmeleri İçin"></h2>
+                <h4 class="lang mt-3 ms-5 text-dark text-center" id="Randevularınızı ve Kasa Gelir/Gider kontrolünü kolayca yapın!"></h4>
+                <h4 class="lang mt-3 ms-5 text-dark text-center" id="Salonium ile kontrol sizde!"></h4>
+            </div>
+            <div class="col-6 mt-4">
+                <img src="./img/crm.png" alt="crm" class="w-75 h-75"> 
+            </div>
+        </div>
+      </div>
+
+      <!-- !Özelliklerimiz -->
+      <h3 class="lang text-center text-danger mb-5" id="Sizin için Neler Yapabiliyoruz?"></h3>
+      <!-- !Slider kısmı -->
+      <div id="carouselExampleIndicators" class="carousel slide mt-5 mb-5 bg-primary-subtle w-75 text-center rounded-4e">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <p>
+                  <h3 class="lang" id="Randevu Yönetimi"></h3> <br>
+                  <strong class="fs-5 lang" id="Hatırlatma mesajlarıyla randevu kaçırmayı önleyin."></strong> 
+                </p>
+                <button type="button" class="btn btn-danger m-4 lang" id="Detaylar için!"></button>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <img src="./img/randevuyonet.png" class="d-block w-50 h-50" alt="randevuyonet">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <p>
+                    <h3 class="lang" id="Kasa Gelir/Gider"></h3> <br>
+                    <strong class="fs-5 lang" id="Tüm gelir ve giderlerinizi kaydederek masraflarınızı titizlikle takip edin"></strong> 
+                  </p>
+                  <button type="button" class="btn btn-danger m-4 lang" id="Detaylar için!"></button>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <img src="./img/tax.jpg" class="d-block w-50 h-50" alt="tax">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- !Özellikler açıklama -->
+      <div id="ozellikler">
+        <div class="row bg-danger-subtle w-50 rounded-top-circle mb-5 p-5 ms-5 mt-5">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5">
+            <h3 class="lang ms-5 mt-4" id="Randevu Yönetimi"></h3> <br>
+            <p class="lang" id="Randevu hatırlatmalarıyla unutulmaz bir deneyim yaşatır. Online randevuyla mesai saatleri dışında bile randevu alınabilir."></p>
+            <ul>
+              <li class="lang" id="Otomatik randevu hatırlat"></li>
+              <li class="lang" id="Kolay ve hızlı randevu oluştur"></li>
+              <li class="lang" id="Randevu kaçaklığını önle"></li>
+            </ul>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
+            <img src="./img/randevuu.png" alt="randevuyonet" class="w-50 rounded-end-4">
+          </div>
+        </div>
+        <div class="row bg-danger-subtle w-50 rounded-bottom-circle mb-5 p-5 ms-5 me-5">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
+            <img src="./img/taxx.jpeg" alt="taxx" class="w-50 rounded-end-4">
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5">
+            <h3 class="lang ms-5 mt-4" id="İşletmenizin Kazancını Gözlemleyin"></h3> <br>
+            <p class="lang" id="Gelir-gider takibiyle finansal denge sağlayın. Detaylı raporlarla geliri analiz edin, kazanç kaynaklarınızı görün."></p>
+            <ul>
+              <li class="lang" id="Hesap bakiyelerini kontrol altına alın"></li>
+              <li class="lang" id="Gelir / Gider dengesini koruyun"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <!-- !Video -->
+    <div class="video">
+    <div class="bg-secondary-subtle rounded-top-pill ms-5 me-5 mt-5 mb-5 w-75">
+      <iframe width="400" height="300" class="mt-5 mb-5" controls="controls" src="https://www.youtube.com/embed/qUcgq4usDvY?si=8e7ajO7gb0pYk2L4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="card-group text-center mb-4">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="card border-info">
+              <div class="card-body">
+                <h5 class="card-title fs-3 fw-bold">%60</h5>
+                <p class="card-text lang fs-4" id="Mesai Dışı Alınan Randevu"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="card border-info">
+              <div class="card-body">
+                <h5 class="card-title fs-3 fw-bold">%72</h5>
+                <p class="card-text lang fs-4" id="Daha Fazla Randevu"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="card border-info">
+              <div class="card-body">
+                <h5 class="card-title fs-3 fw-bold">%100</h5>
+                <p class="card-text lang fs-4" id="Veri Güvenliği"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- !Accordion -->
+    <div class="accordion accordion-flush mt-5 border border-4 mb-5 w-75" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed lang" id="Uygulamanın ücretlendirilmesi nasıl?" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"></button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body lang" id="Ücretsiz Deneme - Aylık - Yıllık"></div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed lang" id="Randevu takibi nasıl yapılır?" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"></button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body lang" id="Randevu takibi, müşteriler ile yapılan randevuların kaydını tutmak ve yönetmek için kullanılan bir süreçtir."></div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed lang" id=" Randevu takibi için hangi özellikler önemlidir?" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"></button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body lang" id="Randevu hatırlatıcıları"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- !Footer -->
+    <div class="container-fluid mt-2 border border-2 border-dark bg-secondary-subtle w-75 p-5">
+      <footer class="row">
+        <p class="mt-5 fw-bold lang" id="Sorularınız mı var? Bizi arayın"></p>
+
+        <div class="col-lg-3 col-6">
+          <ul class="navbar-nav">
+            <li class="nav-item mb-2 lang" id="Hakkımızda"></li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Yatırımcı İlişkileri"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Kullanım Koşulları"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Bize Ulaşın"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-6">
+          <ul class="navbar-nav">
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Yardım Merkezi"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="İş imkanları"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Gizlilik"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Neden Biz?"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-6">
+          <ul class="navbar-nav">
+            <li class="nav-item mb-2"><a href="" class="nav-link">Hesap</a></li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link">Hediye Kartı Kullan</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link">Çerez Tercihleri</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link">Yasal Hükümler</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-6">
+          <ul class="navbar-nav">
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Bizi Takip Edin"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link fs-2"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link fs-2"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link fs-2"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+
+    <!-- !AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- !Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- !JS -->
+    <script src="./script.js"></script>
+</body>
+</html>

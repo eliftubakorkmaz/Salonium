@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#carouselExampleIndicators {
+   margin: auto;
+}
+
+#ozellikler {
+   display: flex;
+   align-items: center;
+   margin-top: 8%;
+}
+
+iframe {
+  margin-left: 35%;
+}
+
+.card-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.accordion {
+    margin-left: 12%;
+}
+
+.video {
+    margin-left: 10%;
+}
