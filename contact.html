@@ -7,9 +7,6 @@
 
        <!-- !FontAwesome -->
        <script src="https://kit.fontawesome.com/136a4e8ae3.js" crossorigin="anonymous"></script>
-
-       <!-- !AOS -->
-       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    
        <!-- !Bootstrap CDN -->
        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -52,18 +49,146 @@
     <h1 class="lang text-center mt-3 text-danger mt-4" id="Salonium Uzmanların Tercihi"></h1>
     <hr>
 
+    <!-- !Sorularınız için -->
+    <div class="container w-75 border border-1 border-black p-4 rounded-3 iletisim">
+    <form method="post">
+      <h4 id="İletişim Formu" class="lang text-center text-primary"></h4>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label lang" id="Ad"></label>
+        <input type="text" id="ad" class="form-control" name="ad" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label lang" id="Soyad"></label>
+        <input type="text" class="form-control" name="soyad" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label lang" id="Eposta"></label> 
+        <input type="text" class="form-control" name="eposta" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label lang" id="Sorunuzun Başlığı"></label>
+        <input type="text" class="form-control" name="sorubasligi" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label lang" id="Sorunuz"></label>
+        <textarea type="text" class="form-control" name="soruIcerigi" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary lang" id="Gönder"></button>
+    </form>
+    </div>
 
+    <!-- !İletişim Adresimiz -->
+    <div class="container mt-5 rounded-3">
+      <h3 class="lang text-center text-primary mb-5" id="İletişim Bilgilerimiz"></h3>
+      <div class="row mb-5 border border-1 border-black p-4 w-75 adres">
+        <div class="col-4 text-center">
+          <p class="lang fw-bold" id="Telefon Numaramız"></p>
+          <p>0262 458 54 43</p>
+          <p class="lang fw-bold" id="E-mail Adresimiz"></p>
+          <p class="lang" id="Salonium@gmail.com"></p>
+          <p class="lang fw-bold" id="Adresimiz"></p>
+          <p class="lang" id="Kadıköy"></p>
+          <ul class="mt-4 text-center list-unstyled fs-4">
+            <li>
+                <a href="https://tr-tr.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=tr" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+              </a>
+          </li>
+          <li>
+            <a href="https://mail.google.com/mail/" target="_blank">
+                <i class="fa-brands fa-google"></i>
+            </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        </ul>
+        </div>
+        <div class="col-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.511777092729!2d29.088339800000004!3d40.9702731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7ac279671e7%3A0x6d5b6d53dc56b9a8!2zS2FkxLFwYcWfYSBTay4sIEthZMSxa8O2eS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1677665813485!5m2!1str!2str" loading="lazy" height="400px" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
 
+    <!-- !Footer -->
+     <!-- !Footer -->
+     <div class="container-fluid mt-2 border border-2 border-dark bg-secondary-subtle w-75 p-5">
+      <footer class="row">
+        <p class="mt-5 fw-bold lang" id="Sorularınız mı var? Bizi arayın"></p>
 
+        <div class="col-lg-3 col-6">
+          <ul class="navbar-nav">
+            <li class="nav-item mb-2 lang" id="Hakkımızda"></li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Yatırımcı İlişkileri"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Kullanım Koşulları"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Bize Ulaşın"></a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="col-lg-3 col-6">
+          <ul class="navbar-nav">
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Yardım Merkezi"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="İş imkanları"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Gizlilik"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Neden Biz?"></a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="col-lg-3 col-6">
+          <ul class="navbar-nav">
+            <li class="nav-item mb-2"><a href="" class="nav-link">Hesap</a></li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link">Hediye Kartı Kullan</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link">Çerez Tercihleri</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link">Yasal Hükümler</a>
+            </li>
+          </ul>
+        </div>
 
-
-
-
+        <div class="col-lg-3 col-6">
+          <ul class="navbar-nav">
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link lang" id="Bizi Takip Edin"></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link fs-2"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link fs-2"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="" class="nav-link fs-2"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
     
-    <!-- !AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- !Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

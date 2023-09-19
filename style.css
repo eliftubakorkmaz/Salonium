@@ -30,3 +30,12 @@ iframe {
 .video {
     margin-left: 10%;
 }
+
+.iletisim {
+    box-shadow: 10px 10px rgb(136, 136, 180);
+}
+
+.adres {
+    margin-left: 15%;
+    box-shadow: 5px 5px palevioletred;
+}
